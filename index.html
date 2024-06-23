@@ -1,801 +1,684 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>青壮年模式</title>
-        <link rel="stylesheet" id="font-css" href="http://at.alicdn.com/t/font_2701600_loackf4ohps.css?meirifuli.net" type="text/css" media="all">
-        <!-- 统计代码 -->
-        <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-        <script>
-            LA.init({
-                id: "K6CYDNcuftTlfVEQ",
-                ck: "K6CYDNcuftTlfVEQ"
-            })
-        </script>
-    </head>
-    <body>
-        <style>
-            a, body, div,footer, h1, h2, h3, h4, h5, h6, header, html, i, img, menu, nav, p, ul, li {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline;
-                list-style: none;
-            }
+<!DOCTYPE html><html><head><meta charset="utf-8">
 
-            * {
-                -webkit-tap-highlight-color: rgba(0,0,0,0);
-                -webkit-tap-highlight-color: transparent;
-                /* For some Androids */
-            }
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>茶馆图发布页</title>
+<meta name="keywords" content="茶馆图,网址导航">
+<meta name="description" content="茶馆图发布页">
+<link rel="stylesheet" id="font-css" href="http://at.alicdn.com/t/font_2701600_loackf4ohps.css?meirifuli.net" type="text/css" media="all">
+<!-- 统计代码 -->
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"K6CNbTW1bYhJy7F9",ck:"K6CNbTW1bYhJy7F9"})</script>
 
-            *, :after, :before {
-                box-sizing: border-box;
-            }
-
-            a {
-                text-decoration: none;
-                color: #ffffff;
-                -webkit-touch-callout: none;
-                -webkit-user-select: none;
-                -webkit-tap-highlight-color: transparent;
-                outline: none;
-                transition: color .1s ease;
-            }
-
-            html {
-                overflow-x: hidden;
-                font-size: 62.5%;
-            }
-
-            html,body {
-                position: relative;
-                height: 100%;
-                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            }
-
-            body {
-                font-family: "Microsoft Yahei", sans-serif;
-                font-size: 15px;
-                background-color: #FFC75F;
-                color: #333;
-                /* background: url(https://img.imdodo.com/dodo/7220133243f8a111804ad315515fcd15.jpg); */
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            header {
-                width: 100%;
-                height: 60px;
-                background-color: rgba(255,255,255,1);
-            }
-
-            main {
-                width: 100%;
-                padding: 10px;
-            }
-
-            .max {
-                max-width: 750px;
-                margin: 0 auto;
-            }
-
-            .flex {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .flex-center {
-                justify-content: center!important;
-            }
-
-            .shadow {
-                background-color: #fff;
-            }
-
-            .header {
-                height: 60px;
-            }
-
-            .header h1 {
-                font-size: 18px;
-            }
-
-            .notice {
-                width: 100%!important;
-                margin: 0 auto 10px!important;
-                padding: 10px;
-                border-radius: 5px!important;
-                background-color: rgba(254,168,2,.15)!important;
-            }
-
-            .notice i {
-                font-size: 15px;
-                color: #FEA802;
-            }
-
-            .notice marquee {
-                width: calc(100% - 25px);
-            }
-
-            .notice h2 {
-                font-size: 15px;
-                color: #000000;
-            }
-
-            .app {
-                width: 100%;
-                padding: 15px 10px 10px;
-                margin: 0 auto 10px;
-                background-color: #fff;
-                border-radius: 5px;
-            }
-
-            .app-meta {
-                padding: 10px 0 25px;
-            }
-
-            .app-meta h1 {
-                font-size: 16px;
-                color: #000;
-            }
-
-            .app-meta h1 i {
-                font-size: 16px;
-                color: #06f;
-                margin: 0 5px 0 0;
-            }
-
-            .app-meta h2 {
-                font-size: 14px;
-                color: #999;
-            }
-
-            .app ul {
-                flex-wrap: wrap;
-                justify-content: flex-start!important;
-            }
-
-            .app-item {
-                width: calc(50% - 5px);
-                margin: 0 10px 15px 0;
-                padding: 10px;
-                background-color: #f3f5f7;
-                border-radius: 5px;
-                overflow: hidden;
-            }
-
-            .app-item img {
-                width: 26px;
-                height: 26px;
-                border-radius: 100%;
-                overflow: hidden;
-            }
-
-            .app-item h1 {
-                width: calc(100% - 56px);
-                font-size: 14px;
-                font-weight: bold;
-                color: #666;
-            }
-
-            .app-item i {
-                font-size: 20px;
-                color: #ccc;
-            }
-
-            .app-item:nth-child(2n) {
-                margin: 0 0 15px 0;
-            }
-        </style>
-        <header>
-            <div class="header max flex flex-center">
-                <h1>青壮年模式</h1>
+</head>
+<body>
+<style>
+a, body, div,footer, h1, h2, h3, h4, h5, h6, header, html, i, img, menu, nav,  p, ul, li {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;list-style: none;}
+ *{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */ }
+*, :after, :before {box-sizing: border-box;}
+a
+{text-decoration: none;
+    color: #ffffff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;transition: color .1s ease;}
+html{overflow-x:hidden;font-size: 62.5%;}
+html,body{position: relative;height: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+body
+{
+    font-family: "Microsoft Yahei", sans-serif;font-size: 15px;
+background-color: #f3f5f7;
+color: #333;
+/* background: url(https://img.imdodo.com/dodo/ae7397e854b2b0364cf02069409b55c6.png); */
+background-attachment: fixed;
+background-repeat: no-repeat;background-size: cover;}
+header{width: 100%;height: 60px;background-color: rgba(255,255,255,1);}
+main{width: 100%;padding: 10px;}
+.max{max-width: 750px;margin: 0 auto;}
+.flex{display: flex;justify-content: space-between;align-items: center;}
+.flex-center{justify-content: center!important;}
+.shadow{background-color: #fff;}
+.header{height: 60px;}
+.header h1{font-size: 18px;}
+.notice{width: 100%!important;margin: 0 auto 10px!important;padding: 10px;border-radius: 5px!important;background-color: rgba(254,168,2,.15)!important;}
+.notice i {font-size: 15px;color: #FEA802;}
+.notice marquee {width: calc(100% - 25px);}
+.notice h2 {font-size: 15px;color: #FEA802;}
+.app{width: 100%;padding: 15px 10px 10px;margin: 0 auto 10px;background-color: #fff;border-radius: 5px;}
+.app-meta{padding: 10px 0 25px;}
+.app-meta h1{font-size: 16px;color: #000;}
+.app-meta h1 i{font-size: 16px;color: #06f;margin: 0 5px 0 0;}
+.app-meta h2{font-size: 14px;color: #999;}
+.app ul{flex-wrap: wrap;justify-content: flex-start!important;}
+.app-item{width: calc(50% - 5px);margin: 0 10px 15px 0;padding: 10px;background-color: #f3f5f7;border-radius: 5px;overflow: hidden;}
+.app-item img {width: 26px;height: 26px;border-radius: 100%;overflow: hidden;}
+.app-item h1 {width: calc(100% - 56px);font-size: 14px;font-weight: bold;color: #666;}
+.app-item i {font-size: 20px;color: #ccc;}
+.app-item:nth-child(2n){margin: 0 0 15px 0;}
+</style>
+<header>
+    <div class="header max flex flex-center">
+        <h1>茶馆图发布页</h1>
+        </div>
+    
+<main class="max">
+    <!--公告-->
+    <div class="notice flex">
+        <i class="fan son-gonggao"></i>
+        <marquee><h2>3秒记住网站：cgtu.fun</h2></marquee>
+        </div>
+    <!--大板块-->
+    <main class="app">
+        <div class="app-meta flex">
+            <h1><i class="fan son-xing"></i>站点导航</h1>
+            <h2>各种资源，总有你需要的！</h2>
             </div>
-            <main class="max">
-                <!--公告-->
-                <div class="notice flex">
-                    <i class="fan son-gonggao"></i>
-                    <marquee>
-                        <h2>QQ群：953305335</h2>
-                    </marquee>
-                </div>
-                <!--大板块-->
-                <main class="app">
-                    <div class="app-meta flex">
-                        <h1>
-                            <i class="fan son-xing"></i>
-                            软件
-                        </h1>
-                        <h2>各种资源，总有你需要的！</h2>
-                    </div>
-                    <ul class="flex">
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://pan.quark.cn/s/e66e21aa5866" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">茶馆图APP（防失联）</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://wbx002.com:4667/?t=huhna" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">BeautyBox</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-                <!--综合站-->
-                <main class="app">
-                    <div class="app-meta flex">
-                        <h1>
-                            <i class="fan son-xing"></i>
-                            综合站
-                        </h1>
-                        <h2>部分网站需要科学上网</h2>
-                    </div>
-                    <ul class="flex">
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://toutiao.men/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">男人头条</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.cool18.com/parks.php" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">留园网</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://meirifuli-baidu.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">每日福利</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="http://qsjncmfkgitoyupl112714.cdn0526.sedhdaquan.com:2086/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">银色导航</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://wan16.one/?u=rJrM3bWxSg" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">一楼一凤</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://sis001.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">第一会所</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://1fuli.one/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">第一福利</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://javtxt.net/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">javtxt</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-                <!--动漫站点-->
-                <main class="app">
-                    <div class="app-meta flex">
-                        <h1>
-                            <i class="fan son-xing"></i>
-                            动漫站点
-                        </h1>
-                        <h2>部分网站需要科学上网！</h2>
-                    </div>
-                    <ul class="flex">
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://e-hentai.org/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">e-hentai</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://pica2023.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">哔咔漫画</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://18comic.org/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">禁漫天堂</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://hanime1.me/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">hanime1</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.lzacg.net/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">量子acg</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://2dfan.org/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">2Dfan</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.hakuk.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">汉库克漫画</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://yifanhune.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">一番魂</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://shenshizhiting.xyz/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">绅士之庭</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://guaiguaizhanhao.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">幻想次元</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-                <!--视频站-->
-                <main class="app">
-                    <div class="app-meta flex">
-                        <h1>
-                            <i class="fan son-xing"></i>
-                            视频站
-                        </h1>
-                        <h2>部分网站需要科学上网！</h2>
-                    </div>
-                    <ul class="flex">
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.jav24.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">jav24</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://coomer.su/artists" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">库默</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://7m7备用域名-pornsuo点com.pornyjs.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">porn研究所</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://xikyo.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">西京热</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://hs188.xyz/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">188视频</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://pwxxxcom.gitbook.io/pwxxx/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">pwxxxcom</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="http://www.huolitv.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">火力视频</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-                <!--图片写真-->
-                <main class="app">
-                    <div class="app-meta flex">
-                        <h1>
-                            <i class="fan son-xing"></i>
-                            图片写真
-                        </h1>
-                        <h2>部分网站需要科学上网！</h2>
-                    </div>
-                    <ul class="flex">
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.rarss.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">美图妹妹</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="http://cgtu.fun/taotu.html" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">4k美女</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.asianude4u.net/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">人体艺术</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://m.tuiimg.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">推图网</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.jdlingyu.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">绝对领域</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.xiarenzhuxin.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">虾仁猪心</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.meijuntu.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">俊美图</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.uyn8.cn/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">牛牛美图</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://hotties.cutiesgeneration.com/zh-hans/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">辣妹时代</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.cos777.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">7萌堂</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.taotucd.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">套图CD</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.xiangsv.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">像素点</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.6evu.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">遛无写真</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="http://www.ikmjx.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">爱看买家秀</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://sesew.top/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">涩涩乐园</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.hotgirl2024.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">hotgirl</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="http://www.ov85.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">醉猫网</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://cydmyz.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">ACG资源网</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="http://www.cosplayla.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">LA站</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.pteman.com/xzhj" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">宅特曼</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.xrmn02.top/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">秀人美女网</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.sifangmao.net/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">私房猫</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.mnjiang.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">咪乃酱</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.itumeng.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">图萌社</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.5280k.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">5280</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.pandadiu.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">Cosplay联盟</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.mingchetuji.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">茗澈图语</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.rosepic.vip/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">魅丝社</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://xingseren.cc/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">行色人</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.lss77.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">蕾丝社</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-                <!--小说-->
-                <main class="app">
-                    <div class="app-meta flex">
-                        <h1>
-                            <i class="fan son-xing"></i>
-                            小说站点
-                        </h1>
-                        <h2>部分网站需要科学上网！</h2>
-                    </div>
-                    <ul class="flex">
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.88yydstxt226.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">第一版主</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://dswx.cyou/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">女神小说</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.k7l9.soushu2031.com/forum.php" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">搜书吧</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.aouba.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">欧巴小说</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.cool18.com/bbs4/index.php" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">禁忌书屋</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="http://www.xinbanzhu.net/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">第一版主</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.23pas.com/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">久久小说网</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://chunman4.com/portal.php" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">春满四合院</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://www.t66y.com/thread0806.php?fid=20" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">草榴社区</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://hongxiuzhao.net/" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">红袖招</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                        <li class="app-item">
-                            <a class="flex" target="_blank" href="https://集书阁.com/?fulione" rel="bookmark">
-                                <img class="app-item-img" src="img/site.png">
-                                <h1 class="app-item-title">集书阁</h1>
-                                <i class="fan son-you"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </main>
-            </main>
-        </header>
-        <!-- Code injected by live-server -->
-        <script>
-            // <![CDATA[  <-- For SVG support
-            if ('WebSocket'in window) {
-                (function() {
-                    function refreshCSS() {
-                        var sheets = [].slice.call(document.getElementsByTagName("link"));
-                        var head = document.getElementsByTagName("head")[0];
-                        for (var i = 0; i < sheets.length; ++i) {
-                            var elem = sheets[i];
-                            var parent = elem.parentElement || head;
-                            parent.removeChild(elem);
-                            var rel = elem.rel;
-                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                            }
-                            parent.appendChild(elem);
-                        }
-                    }
-                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                    var address = protocol + window.location.host + window.location.pathname + '/ws';
-                    var socket = new WebSocket(address);
-                    socket.onmessage = function(msg) {
-                        if (msg.data == 'reload')
-                            window.location.reload();
-                        else if (msg.data == 'refreshcss')
-                            refreshCSS();
-                    }
-                    ;
-                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                        console.log('Live reload enabled.');
-                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                    }
-                }
-                )();
-            } else {
-                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-            }
-            // ]]>
-        </script>
-    </body>
-</html>
+        <ul class="flex">
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://pan.quark.cn/s/e66e21aa5866" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">茶馆图APP</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="http://cgtu.fun/mima/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">青壮年模式</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://flowus.cn/amon/share/fd7390aa-bc98-4a95-9344-bff9c8f0d0a2?code=BHPCZX" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">动漫壁纸200G</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>                
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://flowus.cn/amon/share/109855ed-5abc-4e0a-ba58-700cf314b754?code=BHPCZX" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">写真套图800G</h1>
+                    <i class="fan son-you"></i>
+                </a>
+            </li>
+
+            </ul>
+        </main>  
+
+
+    <!--大板块-->
+    <main class="app">
+        <div class="app-meta flex">
+            <h1><i class="fan son-xing"></i>每日更新</h1>
+            <h2>各种图片，总有你需要的！</h2>
+            </div>
+        <ul class="flex">
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyMDY5MzUwMw==&action=getalbum&album_id=3114223108007329797#wechat_redirect" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">#动漫壁纸</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>  
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyMDY5MzUwMw==&action=getalbum&album_id=3127314562254569476#wechat_redirect" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">#OOTD</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>   
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyMDY5MzUwMw==&action=getalbum&album_id=3199773305482969089#wechat_redirect" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">#COS图集</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>   
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyMDY5MzUwMw==&action=getalbum&album_id=3396871128382603276#wechat_redirect" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">#渣男壁纸</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>   
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyMDY5MzUwMw==&action=getalbum&album_id=3199772684658868226#wechat_redirect" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">#手机壁纸</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>   
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU2MTcyMTA5OA==&action=getalbum&album_id=3462090384560111617#wechat_redirect" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">#今日X图</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>  
+            
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyMDY5MzUwMw==&action=getalbum&album_id=3415300904571011074#wechat_redirect" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">#表情包</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>  
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUyMDY5MzUwMw==&action=getalbum&album_id=3178780336063971334#wechat_redirect" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">#头像</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>  
+
+
+            </ul>
+        </main>  
+
+
+
+    <!--大板块-->
+    <main class="app">
+        <div class="app-meta flex">
+            <h1><i class="fan son-xing"></i>AI绘画</h1>
+            <h2>AI绘画入门及壁纸下载</h2>
+            </div>
+        <ul class="flex">
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://pan.quark.cn/s/967f3410b573" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">AI绘画软件</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://pan.baidu.com/s/1rmkd-pndbbmdr9YUov2W3g?pwd=1234" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">模型Lora</h1>
+                    <i class="fan son-you"></i>
+                </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://pan.quark.cn/s/5277c785dc6e" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">AI图集</h1>
+                    <i class="fan son-you"></i>
+                </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://pan.quark.cn/s/a2518786fa01" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">电脑壁纸（AI）</h1>
+                    <i class="fan son-you"></i>
+                </a>
+            </li>
+
+            </ul>
+        </main>  
+
+
+    <!--大板块-->
+    <main class="app">
+        <div class="app-meta flex">
+            <h1><i class="fan son-xing"></i>综合站</h1>
+            <h2>五花八门，总有你需要的！</h2>
+            </div>
+        <ul class="flex">
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://dimtown.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">次元小镇</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="http://www.soutushenqi.com/home" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">搜图神器</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+                
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.cgziyuanhai.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">资源海</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://huamaobizhi.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">花猫壁纸</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.lunai.top/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">鹿奈次元</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.yeitu.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">亿图全景图库</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://bz.zzzmh.cn/index" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">极简壁纸</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>                   
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.juyovo.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">橘柚小站</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://wallhaven.cc/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">wallhaven</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://yandex.com/images/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">Yandex</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="http://pic.netbian.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">彼岸图网</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            </ul>
+        </main> 
+
+
+    <!--大板块-->
+    <main class="app">
+        <div class="app-meta flex">
+            <h1><i class="fan son-xing"></i>写真网站</h1>
+            <h2>美女壁纸图片、日常穿搭！</h2>
+            </div>
+        <ul class="flex">
+            <li class="app-item">
+                <a class="flex" target="_blank" href="http://cgtu.fun/taotu.html" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">4k美女</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://weibo.com/u/5709983396" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">微博美女</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://huaban.com/favorite/beauty" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">花瓣美女</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://m.tuiimg.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">推图网</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.jdlingyu.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">绝对领域</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+                <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.xiarenzhuxin.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">虾仁猪心</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+                </li>
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.meijuntu.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">俊美图</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                    </li>
+                        
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.uyn8.cn/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">牛牛美图</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://hotties.cutiesgeneration.com/zh-hans/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">辣妹时代</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.cos777.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">7萌堂</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.taotucd.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">套图CD</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                    </li>  
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.xiangsv.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">像素点</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>  
+ 
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.6evu.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">遛无写真</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>  
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="http://www.ikmjx.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">爱看买家秀</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>            
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://sesew.top/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">涩涩乐园</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>  
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.hotgirl2024.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">hotgirl</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>  
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="http://www.ov85.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">醉猫网</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>  
+
+
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://cydmyz.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">ACG资源网</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                    </li>
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="http://www.cosplayla.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">LA站</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+                
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.pteman.com/xzhj" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">宅特曼</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>  
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.xrmn02.top/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">秀人美女网</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>                                          
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.sifangmao.net/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">私房猫</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+                    
+
+                <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.mnjiang.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">咪乃酱</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+                </li>
+
+
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.itumeng.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">图萌社</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>                     
+
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.5280k.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">5280</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.pandadiu.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">Cosplay联盟</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.mingchetuji.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">茗澈图语</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+
+                                
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.rosepic.vip/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">魅丝社</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>   
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://xingseren.cc/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">行色人</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+                <li class="app-item">
+                    <a class="flex" target="_blank" href="https://www.lss77.com/" rel="bookmark">
+                        <img class="app-item-img" src="img/site.png">
+                        <h1 class="app-item-title">蕾丝社</h1>
+                        <i class="fan son-you"></i>
+                        </a>
+                </li>
+
+            </ul>
+        </main> 
+
+    <!--大板块-->
+    <main class="app">
+        <div class="app-meta flex">
+            <h1><i class="fan son-xing"></i>动漫壁纸</h1>
+            <h2>二次元壁纸网站</h2>
+            </div>
+        <ul class="flex">
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://anime-pictures.net/posts?page=0&lang=en" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">anime-pictures</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+                </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://konachan.net/post" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">konachan</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.pixivision.net/zh/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">pixivision</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.vilipix.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">vilipix</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://pixivic.com/?VNK=7359522f" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">pixivic</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://moetu.club/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">萌图社</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://e-shuushuu.net/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">e-shuushuu</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.cgwallpapers.com/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">游戏CG图</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.zerochan.net/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">zerochan</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.pixiv.net/" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">pixiv（需翻墙）</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+                
+            
+
+            </ul>
+        </main> 
+
+    <!--大板块-->
+    <main class="app">
+        <div class="app-meta flex">
+            <h1><i class="fan son-xing"></i>视频网站</h1>
+            <h2>各种资源，总有你需要的！</h2>
+            </div>
+        <ul class="flex">
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://pan.quark.cn/s/4939062ebb0d" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">美女视频素材</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            <li class="app-item">
+                <a class="flex" target="_blank" href="https://www.diskgirl.com/pc.html" rel="bookmark">
+                    <img class="app-item-img" src="img/site.png">
+                    <h1 class="app-item-title">DiskGirl随机小姐姐</h1>
+                    <i class="fan son-you"></i>
+                    </a>
+            </li>
+            </ul>
+        </main>  
+
+    </main>
+
+    
+    
+
+</header></body></html>
